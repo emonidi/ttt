@@ -1,0 +1,182 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+* {
+  font-family: Arial;
+  color: #fff;
+}
+
+/* line 11, ../sass/screen.scss */
+body {
+  background: #000;
+}
+
+/* line 14, ../sass/screen.scss */
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+/* line 19, ../sass/screen.scss */
+.container .title {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 22, ../sass/screen.scss */
+.container .title h1 {
+  font-size: 30px;
+  font-style: italic;
+}
+/* line 29, ../sass/screen.scss */
+.container .game-area {
+  width: 315px;
+  margin: 30px auto;
+  height: 315px;
+}
+/* line 35, ../sass/screen.scss */
+.container .game-area .row {
+  height: 100px;
+  border-bottom: solid 5px #fff;
+}
+/* line 38, ../sass/screen.scss */
+.container .game-area .row .cell {
+  width: 100px;
+  height: 100px;
+  border-right: solid 5px #fff;
+  float: left;
+}
+/* line 44, ../sass/screen.scss */
+.container .game-area .row .cell.last {
+  border: none;
+}
+/* line 49, ../sass/screen.scss */
+.container .game-area .row.last {
+  border: none;
+}
+
+/* line 55, ../sass/screen.scss */
+.cross {
+  background-image: url(../images/cross.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 62, ../sass/screen.scss */
+.circle {
+  background-image: url(../images/circle.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 69, ../sass/screen.scss */
+.button {
+  width: 315px;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 75, ../sass/screen.scss */
+.button button {
+  width: 100px;
+  height: 40px;
+  background: #2b6f96;
+  color: #fff;
+  border: solid 2px blue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 87, ../sass/screen.scss */
+.button button:hover {
+  background: blue;
+}
+
+/* line 93, ../sass/screen.scss */
+.scores {
+  width: 315px;
+  height: 60px;
+  margin: 20px auto;
+}
+/* line 98, ../sass/screen.scss */
+.scores .score {
+  float: left;
+  width: 105px;
+  height: 60px;
+}
+/* line 103, ../sass/screen.scss */
+.scores .score h3 {
+  background: #333;
+  height: 20px;
+  font-size: 18px;
+  line-heght: 20px;
+  text-align: center;
+}

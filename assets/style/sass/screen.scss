@@ -1,0 +1,111 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+*{
+  font-family: Arial;
+  color: #fff;
+}
+body{
+  background: #000;
+}
+.container{
+
+  width:600px;
+  margin: 0 auto;
+
+  .title{
+    margin-top:20px;
+    text-align: center;
+    h1{
+      font-size: 30px;
+      font-style: italic;
+    }
+
+  }
+
+  .game-area{
+
+    width: 315px;
+    margin: 30px auto;
+    height: 315px;
+
+    .row{
+      height: 100px;
+      border-bottom: solid 5px #fff;
+      .cell{
+        width: 100px;
+        height: 100px;
+        border-right: solid 5px #fff;
+        float: left;
+      }
+      .cell.last{
+        border:none;
+      }
+    }
+
+    .row.last{
+      border:none;
+    }
+  }
+}
+
+.cross{
+  background-image: url(../images/cross.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.circle{
+  background-image: url(../images/circle.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button{
+  width: 315px;
+  height: 60px;
+  text-align:center;
+  margin: 0 auto;
+
+  button{
+    width:100px;
+    height:40px;
+    background:rgb(43, 111, 150);
+    color:#fff;
+    border:solid 2px blue;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+  }
+
+  button:hover{
+    background:blue;
+  }
+
+}
+
+.scores{
+  width:315px;
+  height:60px;
+  margin:20px auto;
+
+  .score{
+    float:left;
+    width:105px;
+    height:60px;
+
+      h3{
+        background:#333;
+        height:20px;
+        font-size:18px;
+        line-heght:20px;
+        text-align:center;
+      }
+  }
+}
