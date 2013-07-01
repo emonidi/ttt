@@ -6,11 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="c62a1a2e-852a-4466-b26b-cdd6e2777250" time="1372597910324" ignored="false" />
     <file path="/screen.scss" changelist="c62a1a2e-852a-4466-b26b-cdd6e2777250" time="1372511337713" ignored="false" />
-<<<<<<< HEAD
-    <file path="/script.js" changelist="c62a1a2e-852a-4466-b26b-cdd6e2777250" time="1372665455313" ignored="false" />
-=======
-    <file path="/script.js" changelist="c62a1a2e-852a-4466-b26b-cdd6e2777250" time="1372650209390" ignored="false" />
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
+    <file path="/script.js" changelist="c62a1a2e-852a-4466-b26b-cdd6e2777250" time="1372678460816" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state line="53" column="39" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0">
-=======
-            <state line="53" column="39" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-11.307693">
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
               <folding />
             </state>
           </provider>
@@ -46,11 +38,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state line="241" column="45" selection-start="4995" selection-end="4995" vertical-scroll-proportion="0.40289256">
-=======
-            <state line="228" column="38" selection-start="4535" selection-end="4535" vertical-scroll-proportion="0.045028143">
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
+            <state line="242" column="14" selection-start="5005" selection-end="5005" vertical-scroll-proportion="1.3567681">
               <folding />
             </state>
           </provider>
@@ -84,13 +72,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-<<<<<<< HEAD
     <option name="width" value="1936" />
     <option name="height" value="1176" />
-=======
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -121,11 +104,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sh" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -157,20 +136,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-=======
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24934107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -247,6 +218,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="45" selection-start="4995" selection-end="4995" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/style/sass/screen.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="18" selection-start="1459" selection-end="1842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="39" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0">
@@ -256,7 +241,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state line="379" column="28" selection-start="7948" selection-end="7948" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -299,8 +283,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-=======
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
         <state line="351" column="11" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -336,22 +318,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state line="53" column="39" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0">
-=======
-        <state line="53" column="39" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-11.307693">
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="241" column="45" selection-start="4995" selection-end="4995" vertical-scroll-proportion="0.40289256">
-=======
-        <state line="228" column="38" selection-start="4535" selection-end="4535" vertical-scroll-proportion="0.045028143">
->>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
+        <state line="242" column="14" selection-start="5005" selection-end="5005" vertical-scroll-proportion="1.3567681">
           <folding />
         </state>
       </provider>
