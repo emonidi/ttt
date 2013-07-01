@@ -61,7 +61,11 @@ var agent = function(figure){
     var Super = this;
     this.figure = figure;
     this.reward = 0;
+<<<<<<< HEAD
     this.history = [];
+=======
+    var history = [];
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
     this.q = {
 
     };
@@ -69,6 +73,7 @@ var agent = function(figure){
 
     this.addToHistory = function(qKey,position){
 
+<<<<<<< HEAD
         Super.history.push({qKey:qKey,position:position});
     }
 
@@ -94,12 +99,34 @@ var agent = function(figure){
         }
 
         Super.history = [];
+=======
+        history.push({qKey:qKey,position:position});
+    }
+
+    this.updateHistory = function(){
+
+        for(var i in history){
+
+            var move = history[i];
+
+            var maxNextStateValue = Super.getMaxQValue(move["qKey"]);
+
+            Super.q[move["qKey"]][move["position"]] = Super.reward +(0.5*maxNextStateValue);
+
+        }
+
+        history = [];
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
 
     }
 
     this.addQValue =function(qKey){
 
+<<<<<<< HEAD
            var qVal;
+=======
+
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
            if(!Super.q[qKey]){
                Super.q[qKey] = {};
                var positions = Super.getQPosition(qKey);
@@ -108,6 +135,7 @@ var agent = function(figure){
                    Super.q[qKey][positions[i]] = 1.1;
                }
 
+<<<<<<< HEAD
                qVal= 1;
 
            }else{
@@ -117,6 +145,14 @@ var agent = function(figure){
        // console.log(qVal)
         return qVal;
 
+=======
+               return 1;
+
+           }else{
+               return 0;
+           }
+
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
 
     };
 
@@ -125,7 +161,11 @@ var agent = function(figure){
         var key = Super.q[qKey];
         var max;
         var r;
+<<<<<<< HEAD
         var arr = [];
+=======
+         var arr = [];
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
 
 
         for (var i in key){
@@ -138,7 +178,11 @@ var agent = function(figure){
             }
 
         }
+<<<<<<< HEAD
       //  console.log(r);
+=======
+//        console.log(r);
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
         return r;
     }
 
@@ -206,23 +250,38 @@ var agent = function(figure){
             return false;
         }
 
+<<<<<<< HEAD
         var position = 1;
+=======
+
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
         function getRandom(callback){
            if(callback){
                callback = callback;
            }else{
                callback = null;
            }
+<<<<<<< HEAD
 
            //var random = Super.getRandom();
 
            if($("#"+position).hasClass("active")){
                 //position = random;
+=======
+           var position = 1;
+           var random = Super.getRandom();
+
+           if($("#"+random).hasClass("active")){
+                position = random;
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
 
                 callback(position);
 
            }else{
+<<<<<<< HEAD
                position = position+1;
+=======
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
                getRandom(callback);
            }
 
@@ -239,14 +298,21 @@ var agent = function(figure){
 
         var conf = vb.scanConfiguration();
         var q = Super.addQValue(conf);
+<<<<<<< HEAD
         if(q === 1 || game.episode % 10 === 0){
            getRandom(function(position){
               // console.log("random");
+=======
+        if(q === 1 || game.episode %10){
+           getRandom(function(position){
+             //  console.log("random");
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
                move(position);
            });
         }else{
 
            var eval = Super.evaluateQ(conf);
+<<<<<<< HEAD
          //  console.log(eval);
            move(eval);
         }
@@ -259,6 +325,18 @@ var agent = function(figure){
            vb.setFigure(position,Super.figure);
            Super.addToHistory(conf,position);
            Super.addQValue(conf);
+=======
+          //  console.log(eval);
+           move(eval);
+        }
+
+
+
+        function move(position){
+           vb.removeDataActive(position);
+           vb.setFigure(position,Super.figure);
+           Super.addToHistory(conf,position);
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
 
         }
 
@@ -381,7 +459,11 @@ $(document).ready(function(){
          interval =    setInterval(function(){
              agents[game.activePlayer].makeTurn();
              game.changePlayer();
+<<<<<<< HEAD
          },16);
+=======
+         });
+>>>>>>> c1fe8005cdbf7f6b7e8bc4d6887f8370a66aada5
     });
 
     $(".stop").click(function(){
