@@ -87,7 +87,11 @@ var agent = function(figure){
 
             var maxNextStateValue = Super.getMaxQValue(move["qKey"]);
 
-            Super.q[move["qKey"]][move["position"]] = Super.reward +(0.99*maxNextStateValue);
+            if(i < count){
+              Super.q[move["qKey"]][move["position"]] = Super.reward +(0.99*maxNextStateValue);
+              }else{
+                Super.q[move["qKey"]][move["position"]] = 0;
+              }
 
             //Super.q[move["qKey"]][move["position"]] = ((1-0.1)* Super.q[move["qKey"]][move["position"]])+(0.1*(Super.reward+(0.99*maxNextStateValue))) //Super.reward +(0.5*maxNextStateValue);
 
@@ -206,23 +210,23 @@ var agent = function(figure){
             return false;
         }
 
-        var position = 1;
+        
         function getRandom(callback){
            if(callback){
                callback = callback;
            }else{
                callback = null;
            }
+           var position = 0;
+           var random = Super.getRandom();
 
-           //var random = Super.getRandom();
-
-           if($("#"+position).hasClass("active")){
-                //position = random;
+           if($("#"+random).hasClass("active")){
+                position = random;
 
                 callback(position);
 
            }else{
-               position = position+1;
+               //position = position+1;
                getRandom(callback);
            }
 
@@ -360,6 +364,7 @@ var game = function(){
         game.episode++;
         for(var i in agents){
            if(Super.learnMode === true){
+               
                agents[i].updateHistory();
            }
         }
@@ -387,15 +392,17 @@ $(document).ready(function(){
 
     $(".learn").click(function(){
          game.learnMode = true;
+         $(".game-area").hide();
          interval =    setInterval(function(){
              agents[game.activePlayer].makeTurn();
              game.changePlayer();
-         },16);
+         },1);
 
     });
 
     $(".stop").click(function(){
         game.learnMode = false;
+        $(".game-area").show();
         clearInterval(interval);
 
     });
