@@ -374,6 +374,7 @@ var game = function(){
 
 var game = new game();
 
+
 var agents = {
     1:new agent('cross'),
     2:new agent('circle')
@@ -387,7 +388,9 @@ var  oneGame = function(){
 }
 $(document).ready(function(){
     var interval;
-
+    $.get("./assets/bot_db.json",function(data){
+    agents[2].q = data;
+});
 
 
     $(".learn").click(function(){
