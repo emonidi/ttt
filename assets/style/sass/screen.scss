@@ -100,12 +100,22 @@ body{
     width:105px;
     height:60px;
 
+
       h3{
         background:#333;
-        height:20px;
+        height:19px;
+        padding:2px;
         font-size:18px;
-        line-heght:20px;
+        line-heght:18px;
         text-align:center;
+      }
+
+      .digit{
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 5px;
       }
   }
 }
