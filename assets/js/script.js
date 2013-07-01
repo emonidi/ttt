@@ -194,23 +194,22 @@ var agent = function(figure){
             return false;
         }
 
-        var position = 1;
+
         function getRandom(callback){
            if(callback){
                callback = callback;
            }else{
                callback = null;
            }
-
+           var position = 1;
            var random = Super.getRandom();
 
-           if($("#"+position).hasClass("active")){
-            //    position = random;
+           if($("#"+random).hasClass("active")){
+                position = random;
 
                 callback(position);
 
            }else{
-               position++;
                getRandom(callback);
            }
 
@@ -227,7 +226,7 @@ var agent = function(figure){
 
         var conf = vb.scanConfiguration();
         var q = Super.addQValue(conf);
-        if(q === 1){
+        if(q === 1 || game.episode %10){
            getRandom(function(position){
              //  console.log("random");
                move(position);
